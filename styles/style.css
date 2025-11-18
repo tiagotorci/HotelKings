@@ -1,0 +1,350 @@
+
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Basic&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar-propio {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.nav-img {
+    width: 50px;
+}
+
+nav ul {
+    display: flex;
+    gap: 1px;   
+
+}
+
+.navbar-link {
+    color: #C5C3C6;
+    font-size: 14px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+.navbar-link:hover {
+    color: #ffd100;
+}
+
+.nav-active{
+    color: #ffee32;
+}
+
+body { 
+    display: flex;
+    flex-direction: column;
+    background-color: #141414;
+    font-family: "Roboto", sans-serif;
+
+}
+
+
+p {
+    color: #C5C3C6;
+    font-family: "Basic", sans-serif;
+    font-weight: 400;    
+
+}
+
+
+.habitacion-card {
+    background-color: #202020;
+    border-color: #7c7c7c;
+    margin-bottom: 100px;
+    display: flex;
+}
+
+
+
+h2{
+    color: #FDCA40;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+}
+
+.h2-habitacion {
+    padding: 0;
+    margin: 50px        ;
+    margin-top: 20px;
+    text-align: center;
+    justify-content: space-between;
+    font-family: "Inknut Antiqua", serif;
+    font-size: 55px;
+
+
+}
+
+.p-subtitle{
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #C5C3C6;
+    font-size: 20px;
+}
+
+
+
+.container-card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}   
+
+
+.card-title {
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+
+
+.c-title{
+    font-family: "Inknut Antiqua", serif;
+    color: #1985A1  ;
+}
+.c-title2{
+    font-family: "Inknut Antiqua", serif;   
+    color: #FDCA40  ;
+}
+
+.c-title3{
+    font-family: "Inknut Antiqua", serif;
+    color: #C5C3C6;
+}
+
+
+.c-text {
+    text-align: center;
+}
+
+.c-img{
+    display: flex;
+    border-radius: 35px;
+    padding: 20px;
+    width: 250;
+    height: auto;
+}
+
+.b-card {   
+    border-radius: 0;
+    border-color: #1985A1;
+    color: #1985A1;
+    border-right-width: 1px;
+    justify-content: center;
+}   
+
+
+.b-card:hover {
+    color: white;
+}
+
+.b-card2 {
+    border-radius: 0;
+    border-color: #FDCA40;
+    color: #FDCA40;
+}
+
+.b-card3 {
+    border-radius: 0;
+    border-color: #C5C3C6;
+    color: #C5C3C6;
+}
+
+
+
+.habitacion-card .card-body {
+    text-align: center;
+}
+
+
+
+.navbar-svg{
+    width: 30px;
+    height: 30px;
+}
+.but-class:hover {
+    background-color: black;
+}
+
+.img-nosotros {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+
+}
+
+
+
+.contenedor-nosotros{
+    padding: 60px 0;
+}
+
+.section-services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: 80vh;
+}
+
+.services-grid {
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.card-services{
+    display: flex;
+    max-width: 30em;
+    flex-direction: row;
+    border-radius: 0.7em;
+    padding: 1em;   
+    background-color: #202020;
+}
+
+.img-services{
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    object-fit: cover;  
+}
+
+.body-services{
+    padding: 0.5em;
+    background-color: #202020;
+}
+
+.h5-services {
+    color:  #FFFFFF;
+}
+
+.col-modify-me {    
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+
+}
+
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color: #FDCA40;
+    font-family: "Inknut Antiqua", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-bottom: 40px    ;
+}
+
+.p-home{
+    font-size: 32px;
+    text-align: center;
+}
+
+.section-home {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-home {
+    display: flex;  
+    justify-content: center;
+    width: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.h2-contact{
+    text-align: center;
+}
+
+.p-subtitles{
+    font-size: 24px;
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+    color: #7c7c7c;
+    font-family: "Geologica", sans-serif;    
+
+}
+
+footer {
+    margin-top: auto;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}
+
+
+
+
+html,body{
+    height: 100%;
+}
+
+
+main{
+    flex: 1;
+}
+
+@media (max-width: 776px) {
+    h1 { 
+        font-size: 60px; 
+    }
+    .p-home{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+    .card-services {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .h2-habitacion{
+        font-size: 30px;
+    }
+
+    .p-subtitles{
+        font-size: 18px;
+    }
+
+    main{
+        margin-bottom: 20px;
+    }
+
+
+}
+
