@@ -1,0 +1,25 @@
+// main.scss - CON RUTA CORREGIDA
+
+// 1. UTILITIES (Variables primero)
+@use "partials/utilities/variables" as var; 
+// @use "partials/utilities/mixins" as *; 
+// @use "partials/utilities/extend"; 
+
+// 2. BASE (Estilos fundamentales: reset, global, typography)
+@use "partials/base/reset";
+@use "partials/base/global";
+@use "partials/base/typography";
+
+// 3. COMPONENTS 
+@use "partials/components/general";
+@use "partials/components/header";
+@use "partials/components/buttons";
+@use "partials/components/cards";
+
+// 4. SECTIONS
+@use "partials/sections/home";
+@use "partials/sections/about";
+@use "partials/sections/rooms";
+@use "partials/sections/services";
+@use "partials/sections/vip";
+@use "partials/sections/contact";

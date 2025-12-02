@@ -11,35 +11,29 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-propio">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="nav-img" src="../assets/icons/CrownIcongray.png" alt="logo Hotel"></a>
-            <button class="navbar-toggler border-0 but-class" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span><img class="navbar-svg" src="../assets/icons/menunavbar.svg" alt=""></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" >
-                <li class="nav-item">
-                <a class="nav-link navbar-link" aria-current="page" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./habitaciones.html">Habitaciones</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-active navbar-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-logo" src="../assets/icons/CrownIcongray.png" alt="logo Hotel">
+                </a>
+                <button class="navbar-toggler border-0 navbar-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span><img class="navbar-toggler-icon-custom" src="../assets/icons/menunavbar.svg" alt="icono responsive navbar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link my-nav" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./habitaciones.html">Habitaciones</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav my-nav-active" href="#">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </nav>            
-    </header>       
+        </nav>
+    </header>
     <main>
         <div class="container mt-5">
-            <h2 class="h2-contact">Estamos para ayudarte</h2>
-            <p class="p-subtitles">Si tenés dudas, querés hacer una reserva o necesitás información personalizada, no dudes en escribirnos.</p>
+            <h2 class="contact-title">Estamos para ayudarte</h2>
+            <p class="contact-subtitle">Si tenés dudas, querés hacer una reserva o necesitás información personalizada, no dudes en escribirnos.</p>
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="nombre">Nombre:</label>
@@ -65,12 +59,25 @@
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </div>
             </form>
+            <div class="row contact-row-padding">
+                <div class="col-md-4">
+                    <img class="contact-image img-fluid" src="../assets/images/atencion al cliente.jpg" alt="foto de atencion al cliente">
+                </div>
+                <div class="col-md-8">
+                    <h5 class="contact-info-title">Estamos acá para ayudarte en cada paso</h5>
+                    <p class="contact-info-text">Nuestro equipo de atención al cliente está preparado para brindarte asesoramiento claro, rápido y personalizado. Si tenés dudas, consultas técnicas o necesitás acompañamiento, no dudes en comunicarte con nosotros. Queremos asegurarnos de que tu experiencia sea simple y sin complicaciones.</p>
+                </div>
+            </div>
+            <div class="row contact-row-padding">
+                <div class="col-md-4">
+                    <img class="contact-image img-fluid" src="../assets/images/atencion al cliente2.jpg" alt="foto de espera en atencion al cliente">
+                </div>
+                <div class="col-md-8">
+                    <h5 class="contact-info-title">Tu consulta nos importa</h5>
+                    <p class="contact-info-text">Sabemos lo importante que es recibir una respuesta cuando la necesitás. Por eso, nuestro equipo está atento para ayudarte, escucharte y ofrecerte soluciones reales. Escribinos con confianza: estamos para acompañarte y resolver tus inquietudes cuanto antes.</p>
+                </div>
+            </div>
         </div>
-
-
-
-
-
 
 
     </main>

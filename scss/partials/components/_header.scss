@@ -1,0 +1,39 @@
+@use '../utilities/variables' as var;
+
+.navbar {
+    &-custom {
+        background-color: var.$color-dark-navbar;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+    }
+    &-logo {
+        width: 50px;
+    }
+    &-toggler {
+        &-icon-custom {
+            width: 30px;
+            height: 30px;
+        }
+        &-btn:hover {
+            background-color: black;
+        }
+    }
+}
+
+.my-nav {
+    color: var.$color-text-main;
+    font-size: 14px;
+    font-family: var.$font-ubuntu;
+    font-weight: 300;
+    font-style: normal;
+
+    &:hover {
+        color: var.$color-brand-hover;
+    }
+    
+    &-active {
+        color: var.$color-brand-active;
+    }
+}

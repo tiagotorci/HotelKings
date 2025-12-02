@@ -3,106 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../styles/style.css">
     <title>Servicios</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-propio">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="nav-img" src="../assets/icons/CrownIcongray.png" alt="logo Hotel"></a>
-            <button class="navbar-toggler border-0 but-class" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span><img class="navbar-svg" src="../assets/icons/menunavbar.svg" alt=""></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" >
-                <li class="nav-item">
-                <a class="nav-link navbar-link" aria-current="page" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./habitaciones.html">Habitaciones</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link nav-active navbar-link" href="#">Servicios</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>       
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-logo" src="../assets/icons/CrownIcongray.png" alt="logo Hotel">
+                </a>
+                <button class="navbar-toggler border-0 navbar-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span><img class="navbar-toggler-icon-custom" src="../assets/icons/menunavbar.svg" alt="icono responsive navbar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link my-nav" href="./nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./habitaciones.html">Habitaciones</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav my-nav-active" href="#">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </nav>            
-    </header>     
+        </nav>
+    </header>
 <main>
-  <div class="container section-services">
+  <section class="container services-section">
     <div class="row">
       <div class="col">
-        <h2 class="h2-habitacion">Todo lo que necesitás, en un solo lugar</h2>
-        <p class="p-subtitles">En Hotel Kings nos ocupamos de cada detalle para que tu estadía sea cómoda, relajada y sin preocupaciones.</p>
+        <h2 class="services-title">Todo lo que necesitás, en un solo lugar</h2>
+        <p class="services-subtitle">En Hotel Kings nos ocupamos de cada detalle para que tu estadía sea cómoda, relajada y sin preocupaciones.</p>
       </div>
     </div>
+    
+    <div class="row mt-4">
+      <div class="col-12 col-md-6 service-col-center mb-4">
+        <div class="card service-card mx-auto">
+          <img class="service-image card-img-top" src="../assets/images/cafe.jpg" alt="Taza de café humeante y granos de café">
+          <div class="card-body service-body">
+            <h5 class="card-title service-title">Bar & Cafetería</h5>
+            <p class="card-text">Disfrutá de tragos, cafés y snacks a cualquier hora del día.</p>
+          </div>
+        </div>
+      </div>
 
-    <div class="row">
-        <div class="col-12 col-md-6 col-modify-me">
-            <div class="card card-services">
-            <img class="img-services card-img-top" src="../assets/images/cafe.jpg" alt="cafe">
-            <div class="card-body body-services">
-                <h5 class="card-title h5-services">Bar & Cafetería</h5>
-                <p class="card-text">Disfrutá de tragos, cafés y snacks a cualquier hora del día.</p>
-            </div>
-            </div>
+      <div class="col-12 col-md-6 service-col-center mb-4">
+        <div class="card service-card mx-auto">
+          <img class="service-image card-img-top" src="../assets/images/limpieza.jpg" alt="Persona de limpieza limpiando una habitación de hotel">
+          <div class="card-body service-body">
+            <h5 class="card-title service-title">Servicio de limpieza diario</h5>
+            <p class="card-text">Nuestro personal mantiene tu habitación impecable toda tu estadía.</p>
+          </div>
         </div>
+      </div>
+    </div>
+    
+    <div class="row mb-5 mt-4">
+      <div class="col-12 col-md-6 service-col-center mb-4">
+        <div class="card service-card mx-auto">
+          <img class="service-image card-img-top" src="../assets/images/piscina.jpg" alt="Piscina exterior con solárium y reposeras">
+          <div class="card-body service-body">
+            <h5 class="card-title service-title">Piscina y solárium</h5>
+            <p class="card-text">Relajate en nuestra piscina exterior con reposeras y un entorno tranquilo.</p>
+          </div>
+        </div>
+      </div>
 
-        <div class="col-12 col-md-6 col-modify-me">
-            <div class="card card-services">
-            <img class="img-services card-img-top" src="../assets/images/limpieza.jpg" alt="servicio de limpieza">
-            <div class="card-body body-services">
-                <h5 class="card-title h5-services">Servicio de limpieza diario</h5>
-                <p class="card-text">Nuestro personal se encarga de mantener tu habitación impecable durante toda tu estadía.</p>
-            </div>
-            </div>
+      <div class="col-12 col-md-6 service-col-center mb-4">
+        <div class="card service-card mx-auto">
+          <img class="service-image card-img-top" src="../assets/images/seguridad-en-estacionamiento-1.jpg" alt="Estacionamiento cubierto con autos y señalización">
+          <div class="card-body service-body">
+            <h5 class="card-title service-title">Estacionamiento privado</h5>
+            <p class="card-text">Espacio seguro y gratuito para nuestros huéspedes.</p>
+          </div>
         </div>
-        </div>
-    <div class="row">
-        <div class="col-12 col-md-6 col-modify-me">
-            <div class="card card-services">
-            <img class="img-services card-img-top" src="../assets/images/piscina.jpg" alt="Nuestra piscina">
-            <div class="card-body body-services">
-                <h5 class="card-title h5-services">Piscina y solárium</h5>
-                <p class="card-text">Relajate en nuestra piscina exterior con reposeras y un entorno tranquilo.</p>
-            </div>
-            </div>            
-        </div>
-        <div class="col-12 col-md-6 col-modify-me">
-            <div class="card card-services">
-            <img class="img-services card-img-top" src="../assets/images/seguridad-en-estacionamiento-1.jpg" alt="Nuestro estacionamiento privado   ">
-            <div class="card-body body-services">
-                <h5 class="card-title h5-services">Estacionamiento privado</h5>
-                <p class="card-text">Espacio seguro y gratuito para nuestros huéspedes.</p>
-            </div>
-            </div>   
-                         
-              
-        </div>        
+      </div>
+    </div>
+    
+    <div class="row mb-5 mt-4">
+      <div class="col text-center">
+        <a href="./habitaciones.html" class="btn btn-outline-warning btn-explorar">Habitaciones</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="container services-section vip-promotion-section">
+    <div class="row mb-5">
+      <div class="col">
+        <img class="service-vip-image img-fluid d-block mx-auto" src="../assets/images/servicio vip.jpg" alt="Persona de servicio al cliente sonriendo y tomando notas">
+      </div>
     </div>
     <div class="row">
-        <div class="col col-modify-me">
-            <a href="./habitaciones.html" class="btn btn-outline-warning b-card2">Habitaciones</a>            
-
-  </div>
-  
+      <div class="col text-center">
+        <h5 class="service-vip-title">Servicio VIP Personalizado</h5>
+        <p class="service-vip-text">Viví una experiencia diseñada exclusivamente para vos. Nuestro Servicio VIP te ofrece atención prioritaria, asistencia personalizada y soluciones rápidas para cualquier necesidad que tengas durante tu estadía. Desde gestionar reservas especiales hasta preparar detalles únicos en tu habitación, nuestro equipo está dedicado a brindarte un trato cercano, eficiente y totalmente adaptado a tus preferencias. La idea es simple: que disfrutes como querés, sin preocuparte por nada.</p>
+      </div>
+    </div>
+  </section>
 </main>
-
-
-
-
     <footer>
-        <p>© 2025 Hotel Kings — Todos los derechos reservados</p> 
-    </footer>  
+      <p>© 2025 Hotel Kings — Todos los derechos reservados</p> 
+    </footer>
+    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
 </body>
 </html>

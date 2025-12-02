@@ -1,0 +1,31 @@
+@use '../utilities/variables' as var;
+
+.room {
+    &-title {
+        padding: 0;
+        margin: 50px;
+        margin-top: 20px;
+        text-align: center;
+        justify-content: space-between;
+        font-family: var.$font-inknut;
+        font-size: 55px;
+
+        @media (max-width: var.$breakpoint-sm) {
+            font-size: 30px;
+        }
+    }
+    &-type {
+        font-family: var.$font-inknut;
+        text-align: center;
+        
+        &--standard {
+            color: var.$color-brand-standard;
+        }
+        &--deluxe {
+            color: var.$color-brand-deluxe;
+        }
+        &--superior {
+            color: var.$color-brand-superior;
+        }
+    }
+}

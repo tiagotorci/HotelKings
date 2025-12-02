@@ -1,0 +1,56 @@
+@use '../utilities/variables' as var;
+
+.room-card {
+    background-color: var.$color-dark-secondary;
+    border-color: var.$color-text-secondary;
+    margin-bottom: 100px;
+    display: flex;
+    text-align: center;
+}
+
+.room-card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}   
+
+.card-image-rounded {
+    display: flex;
+    border-radius: 35px;
+    padding: 20px;
+    width: 250;
+    height: auto;
+}
+
+// Service Card
+.service-card {
+    display: flex;
+    max-width: 30em;
+    flex-direction: row;
+    border-radius: 0.7em;
+    padding: 1em;   
+    background-color: var.$color-dark-secondary;
+
+    @media (max-width: var.$breakpoint-sm) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.service-image {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    object-fit: cover;  
+}
+
+.service-body {
+    padding: 0.5em;
+    background-color: var.$color-dark-secondary;
+}
+
+.service-title {
+    color: var.$color-brand-light;
+}

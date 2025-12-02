@@ -1,0 +1,21 @@
+.about {
+    &-container {
+        padding: 60px 0;
+    }
+    &-row {
+        display: flex;
+        padding-top: 120px;
+    }
+}
+
+.img-nosotros {
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.nosotros-modify-image {
+    width: 450px;
+    height: auto;  
+    border-radius: 20px;
+}

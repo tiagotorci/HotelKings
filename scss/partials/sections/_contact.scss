@@ -1,0 +1,37 @@
+@use '../utilities/variables' as var;
+
+.contact {
+    &-title, &-subtitle {
+        text-align: center;
+    }
+    &-subtitle {
+        font-size: 24px;
+    }
+    &-row-padding {
+        padding: 50px;
+        padding-bottom: 20px;
+    }
+    &-image {
+        width: 500px;
+        border-radius: 10px;
+    }
+    &-info {
+        &-title {
+            font-family: var.$font-inknut;
+            font-weight: 400;
+            font-style: normal;
+            color: var.$color-brand-accent;
+        }
+        &-text {
+            font-size: 18px;
+        }
+    }
+}
+
+footer {
+    margin-top: auto;
+    background-color: var.$color-dark-navbar;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
+}

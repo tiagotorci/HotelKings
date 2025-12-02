@@ -5,53 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
     <!-- CSS -->
     <link rel="stylesheet" href="../styles/style.css">
     <title>Nosotros</title>
 </head>
 <body>
     <header>
-        <i class="bi bi-columns-gap"></i><i class="bi bi-columns-gap"></i>
-        <nav class="navbar navbar-expand-lg navbar-propio">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html"><img class="nav-img" src="../assets/icons/CrownIcongray.png" alt="logo Hotel"></a>
-            <button class="navbar-toggler border-0 but-class" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span><img class="navbar-svg" src="../assets/icons/menunavbar.svg" alt=""></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" >
-                <li class="nav-item">
-                <a class="nav-link nav-active navbar-link" aria-current="page" href="#">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./habitaciones.html">Habitaciones</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">
+                    <img class="navbar-logo" src="../assets/icons/CrownIcongray.png" alt="logo Hotel">
+                </a>
+                <button class="navbar-toggler border-0 navbar-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span><img class="navbar-toggler-icon-custom" src="../assets/icons/menunavbar.svg" alt="icono responsive navbar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link my-nav my-nav-active" href="#">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./habitaciones.html">Habitaciones</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+     
+<main>
+    <div class="container text-center about-container">
+        <div class="row about-row" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-lg-8 col-md-12 order-1 order-md-1">
+                <img class="img-fluid w-100 nosotros-modify-image" src="../assets/images/Hotel-Montevideo-Piso-10-1-scaled.jpg">
+            </div>
+            <div class="col-lg-4 col-md-12 text-center text-light p-5 order-2 order-md-2">
+                <h2>Sobre nosotros!</h2>
+                <p>Somos un espacio creado para quienes disfrutan de la buena vida: ambientes cálidos, vistas únicas y una atención pensada para que cada persona se sienta realmente bienvenida. Nuestro objetivo es que cada visita se convierta en un recuerdo agradable, ya sea que vengas a relajarte, compartir o descubrir nuevas experiencias.  </p>
+                <a href="./servicios.html" class="btn btn-outline-warning btn-outline-deluxe">Servicios</a>
             </div>
         </div>
-        </nav>            
-    </header>    
-    <main>
-            <div class="container text-center contenedor-nosotros">
-            <div class="row row-mio">
-                <div class="col-lg-8 col-md-12">
-                <img class="img-fluid w-100 "  src="../assets/images/Hotel-Montevideo-Piso-10-1-scaled.jpg" alt="">
-                </div>
-                <div class="col-lg-4 col-md-12 text-center text-light p-5">
-                    <h2 class="h2-habitacion">Sobre nosotros!</h2>
-                    <p>Somos una organización dedicada a crear experiencias digitales que combinan diseño, funcionalidad y un enfoque centrado en las personas. A lo largo del tiempo, descubrimos que quienes visitan un sitio suelen prestar más atención a la apariencia general antes que al contenido en sí, por lo que desarrollamos una metodología que equilibra ambos aspectos. Nuestro objetivo es ofrecer resultados claros, estéticamente coherentes y pensados para mejorar cada interacción.</p>
-                    <a href="./servicios.html" class="btn btn-outline-warning b-card2">Servicios</a>
-                </div>            
-    </main>
+    <div class="row about-row mt-4" data-aos="fade-up" data-aos-duration="3000">
+        <div class="col-lg-4 col-md-12 text-center text-light p-5 order-2 order-lg-1">
+            <h2 class="h2-habitacion">Nuestra filosofía</h2>
+            <p>Creemos profundamente en el valor de los detalles. Nada está puesto al azar: la música, las luces, los aromas y cada elemento de la decoración fueron cuidadosamente seleccionados para transmitir armonía. Queremos que, al entrar, sientas que el tiempo baja la velocidad y que todo está preparado para que disfrutes sin apuros.</p>
+            <a href="./servicios.html" class="btn btn-outline-warning btn-explorar">Servicios</a>
+        </div>
+        <div class="col-lg-8 col-md-12 order-1 order-lg-2">
+            <img class="img-fluid w-100 nosotros-modify-image" src="../assets/images/paisaje.jpg">
+        </div>
+
+    </div>
+        <div class="row about-row" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-lg-8 col-md-12 order-1 order-md-1">
+                <img class="img-fluid w-100 nosotros-modify-image" src="../assets/images/hotel-palmeras.jpg">
+            </div>
+
+            <div class="col-lg-4 col-md-12 text-center text-light p-5 order-2 order-md-2 ">
+                <h2>Experiencia</h2>
+                <p>Trabajamos para ofrecer momentos memorables, combinando profesionalismo con un trato cercano y humano. Buscamos que cada visita tenga algo especial: una recomendación acertada, una atmósfera perfecta o simplemente ese toque que hace que quieras volver. Nuestra experiencia se construye todos los días, a través de quienes nos eligen.</p>
+                <a href="./servicios.html" class="btn btn-outline-warning btn-explorar">Servicios</a>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+
+
     <footer>
         <p>© 2025 Hotel Kings — Todos los derechos reservados</p> 
     </footer> 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>        
   
 </body>

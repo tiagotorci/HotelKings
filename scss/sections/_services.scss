@@ -1,0 +1,30 @@
+// scss/partials/sections/_services.scss
+
+// 1. Usar el mixin de Flexbox y las variables
+@use '../../utilities/mixins' as *; // Importa mixins (clave para usar @include flex)
+@use '../../utilities/variables' as var; // Importa variables
+
+.services {
+    &-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        min-height: 80vh;
+    }
+    
+    &-title, &-subtitle {
+        text-align: center;
+    }
+    
+    &-grid {
+        margin-top: 120px;
+        gap: 30px;
+        
+        @include flex($justify: center, $align: flex-start, $direction: row);
+        flex-wrap: wrap; 
+    }
+    
+    &-col-center {    
+        @include flex($justify: center, $align: center, $direction: row);
+        padding: 20px;
+    }
+}

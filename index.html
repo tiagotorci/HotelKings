@@ -5,61 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./styles/style.css">
     <title>Home</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-propio">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img class="nav-img" src="./assets/icons/CrownIcongray.png" alt="logo Hotel"></a>
-            <button class="navbar-toggler border-0 but-class" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span><img class="navbar-svg" src="../assets/icons/menunavbar.svg" alt=""></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto" >
-                <li class="nav-item">
-                <a class="nav-link navbar-link" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./pages/habitaciones.html">Habitaciones</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./pages/servicios.html">Servicios</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link navbar-link" href="./pages/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" src="./assets/icons/CrownIcongray.png" alt="logo Hotel">
+                </a>
+                <button class="navbar-toggler border-0 navbar-toggler-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span><img class="navbar-toggler-icon-custom" src="./assets/icons/menunavbar.svg" alt="icono responsive navbar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link my-nav" href="./pages/nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./pages/habitaciones.html">Habitaciones</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link my-nav" href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-        </nav>            
+        </nav>
     </header>
     <main>
-        <section class="section-home">
+        <section class="home-section">
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h1>Hotel  Kings</h1>
-                        <p class="p-home">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
-                        <div class="card-home">
-                            <a href="./pages/nosotros.html" class="btn btn-outline-warning b-card2">Sobre Nosotros!</a> 
+                        <h1 data-aos="flip-up"data-aos-duration="3000" >Hotel  Kings</h1>
+                        <p class="home-text">Bienvenido a Hotel Kings, un espacio pensado para brindarte comodidad, tranquilidad y una experiencia única. Nuestro objetivo es que disfrutes de una estadía confortable, con atención personalizada y servicios diseñados para hacerte sentir como en casa.Explorá nuestras habitaciones, descubrí nuestras instalaciones y viví una experiencia de calidad en cada detalle.</p>
+                        <div class="home-card">
+                            <a data-aos="zoom-in-down" data-aos-duration="1500" href="./pages/nosotros.html" class="btn btn-outline-warning btn-explorar">Sobre Nosotros!</a> 
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        
-
     </main>
     <footer>
         <p>© 2025 Hotel Kings — Todos los derechos reservados</p> 
     </footer>
-
-
-
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <!-- BOOTSTRAP JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>

@@ -1,0 +1,28 @@
+@use '../utilities/variables' as var;
+
+.btn {
+    &-outline {
+        &-standard {   
+            border-radius: 0;
+            border-color: var.$color-brand-standard;
+            color: var.$color-brand-standard;
+            border-right-width: 1px;
+            justify-content: center;
+        }   
+        &-deluxe {
+            border-radius: 0;
+            border-color: var.$color-brand-deluxe;
+            color: var.$color-brand-deluxe;
+        }
+        &-superior {
+            border-radius: 0;
+            border-color: var.$color-brand-superior;
+            color: var.$color-brand-superior;
+        }
+    }
+    &-explorar {
+        border-radius: 0; 
+        border-color: var.$color-brand-accent; 
+        color: var.$color-brand-accent;
+    }
+}

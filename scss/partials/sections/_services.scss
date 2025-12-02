@@ -1,0 +1,19 @@
+.services {
+    &-section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        min-height: 80vh;
+    }
+    &-title, &-subtitle {
+        text-align: center;
+    }
+    &-grid {
+        margin-top: 40px;
+        gap: 30px;
+    }
+    &-col-center {    
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+    }
+}
