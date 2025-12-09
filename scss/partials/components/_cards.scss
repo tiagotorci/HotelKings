@@ -1,22 +1,21 @@
 @use '../utilities/variables' as var;
+@use '../utilities/mixins' as util;
 
 .room-card {
     background-color: var.$color-dark-secondary;
     border-color: var.$color-text-secondary;
     margin-bottom: 100px;
-    display: flex;
+    @include util.flex-center($direction: column);
     text-align: center;
 }
 
 .room-card-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    @include util.flex-center($wrap: wrap);
     gap: 20px;
 }   
 
 .card-image-rounded {
-    display: flex;
+    @include util.flex-center();
     border-radius: 35px;
     padding: 20px;
     width: 250;
@@ -24,9 +23,60 @@
 }
 
 .service-card {
-    display: flex;
+    @include util.flex-center($direction: row);
     max-width: 30em;
-    flex-direction: row;
+    border-radius: 0.7em;
+    padding: 1em;   
+    background-color: var.$color-dark-secondary;
+
+    @media (max-width: var.$breakpoint-sm) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.service-image {
+    max-width: 25%;
+    margin: auto;
+    padding: 0.5em;
+    border-radius: 0.7em;
+    object-fit: cover;  
+}
+
+.service-body {
+    padding: 0.5em;
+    background-color: var.$color-dark-secondary;
+}
+
+.service-title {
+    color: var.$color-brand-light;
+}@use '../utilities/variables' as var;
+@use '../utilities/mixins' as util;
+
+.room-card {
+    background-color: var.$color-dark-secondary;
+    border-color: var.$color-text-secondary;
+    margin-bottom: 100px;
+    @include util.flex-center($direction: column);
+    text-align: center;
+}
+
+.room-card-container {
+    @include util.flex-center($wrap: wrap);
+    gap: 20px;
+}   
+
+.card-image-rounded {
+    @include util.flex-center();
+    border-radius: 35px;
+    padding: 20px;
+    width: 250;
+    height: auto;
+}
+
+.service-card {
+    @include util.flex-center($direction: row);
+    max-width: 30em;
     border-radius: 0.7em;
     padding: 1em;   
     background-color: var.$color-dark-secondary;

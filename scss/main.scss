@@ -1,4 +1,5 @@
 @use "partials/utilities/variables" as var; 
+@use "partials/utilities/mixins";
 
 @use "partials/base/reset";
 @use "partials/base/global";
